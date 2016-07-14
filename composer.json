@@ -1,10 +1,10 @@
 {
-    "name": "honeybee/honeybee-agavi-cmf-project",
+    "name": "samir-plusb/willkommens-app-backend",
     "license": "MIT",
     "type": "project",
     "description": "Project (template) for building content-management applications, based on Agavi and the Honeybee CQRS library.",
     "keywords": [ "honeybee", "agavi", "project-template" ],
-    "homepage": "https://github.com/honeybee/honeybee-agavi-cmf-project",
+    "homepage": "https://github.com/samir-plusb/willkommens-app-backend",
     "authors": [
         {
             "name": "Hasham Ahmad",
@@ -24,12 +24,12 @@
         },
         {
             "name": "Honeybee Contributors",
-            "homepage": "https://github.com/honeybee/honeybee-agavi-cmf-project/graphs/contributors"
+            "homepage": "https://github.com/samir-plusb/willkommens-app-backend/graphs/contributors"
         }
     ],
 
     "support": {
-        "issues": "https://github.com/honeybee/honeybee-agavi-cmf-project/issues",
+        "issues": "https://github.com/samir-plusb/willkommens-app-backend/issues",
         "cookbook": "https://github.com/honeybee/honeybee-agavi-cmf-demo/cookbook/wiki",
         "irc": "irc://irc.freenode.org/honeybee"
     },

@@ -32,7 +32,7 @@ Creating a project with `composer` will guide you through configuring a project 
 ```shell
 # replace the last argument with your chosen folder name if required
 composer create-project -sdev --ignore-platform-reqs --no-install \
-honeybee/honeybee-agavi-cmf-project honeybee-agavi-cmf-project
+samir-plusb/willkommens-app-backend willkommens-app-backend
 ```
 
 The repository will be cloned and a post-install script will be executed which will prompt you with some simple configuration questions.
@@ -48,12 +48,12 @@ Your application is now configured and ready for committing to your own reposito
 
 ```shell
 # first create repository at Github
-cd honeybee-agavi-cmf-project
+cd willkommens-app-backend
 git init
 git add .
 git commit -m 'Initialising project'
 # replace the following Github repository url with your own
-git remote add origin git@github.com:honeybee/honeybee-agavi-cmf-project.git
+git remote add origin git@github.com:samir-plusb/willkommens-app-backend.git
 git push -u origin master
 ```
 
@@ -62,7 +62,7 @@ git push -u origin master
 When your new repository is publicly available, the VM is ready to launch. When the VM is first initialised, it will clone the Github repository you just created. You can start the machine with the following commands:
 
 ```shell
-cd honeybee-agavi-cmf-project/dev/box
+cd willkommens-app-backend/dev/box
 vagrant up
 # please wait, the virtual machine will be downloaded and installed
 # provisioning can take up to 30 minutes depending on resources
@@ -76,7 +76,7 @@ When your VM is up and running you can finish installation by executing the foll
 
 ```shell
 vagrant ssh
-cd /srv/www/honeybee-agavi-cmf-project.local
+cd /srv/www/willkommens-app-backend.local
 composer install 
 # when prompted you should accept the project installation
 sudo service nginx restart
@@ -88,7 +88,7 @@ The application will install all dependencies and build all required resources. 
 
 When successfully setup the application should be accessible at: 
 
-https://honeybee-agavi-cmf-project.local/ 
+https://willkommens-app-backend.local/ 
 
 At this point it is ready for use and development, however it will not contain any data at this point. If you have not created a Honeybee application before we recommend that you review the [cookbook][5]. The cookbook will guide you through the creation of a demo application from scratch, explaining many of the concepts you will need to know to build applications on this framework.
 
@@ -99,23 +99,23 @@ Alternatively you may wish to intialise the application from scratch as explaine
  * Mac OSX:
     * In the Finder menu:
       * Select *Connect to Server... (⌘K)*
-      * Enter the following address: `nfs://honeybee-agavi-cmf-project.local/srv/www/`
+      * Enter the following address: `nfs://willkommens-app-backend.local/srv/www/`
  * Ubuntu/Linux:
-   * `mount honeybee-agavi-cmf-project.local:/srv/www/ /home/${USER}/projects/honeybee-agavi-cmf-project`
+   * `mount willkommens-app-backend.local:/srv/www/ /home/${USER}/projects/willkommens-app-backend`
 
 ###Controlling system services
 
 The following main services are running on the VM and are controlled via `systemd`:
 
  * Couchdb
-   * http-endpoint: http://honeybee-agavi-cmf-project.local:5984
-   * web-client: http://honeybee-agavi-cmf-project.local:5984/_utils
+   * http-endpoint: http://willkommens-app-backend.local:5984
+   * web-client: http://willkommens-app-backend.local:5984/_utils
  * Elasticsearch
-   * http-endpoint: http://honeybee-agavi-cmf-project.local:9200
-   * web-client: http://honeybee-agavi-cmf-project.local:9200/_plugin/head/
+   * http-endpoint: http://willkommens-app-backend.local:9200
+   * web-client: http://willkommens-app-backend.local:9200/_plugin/head/
  * Converjon
-   * http-endpoint: https://honeybee-agavi-cmf-project.local/converjon
-   * web-status: https://honeybee-agavi-cmf-project.local/converjon/status
+   * http-endpoint: https://willkommens-app-backend.local/converjon
+   * web-status: https://willkommens-app-backend.local/converjon/status
  
 In order to start/stop services or get the status, use the corresponding `sudo` command within the VM.
 
@@ -169,7 +169,7 @@ We can create an administration user with the following command.
 composer user-create
 ```
 
-The command will prompt for a user name and email address. Enter your choices following the command instructions, then follow instructions for setting a password. You may then login to the system at https://honeybee-agavi-cmf-project.local/ with your newly created account.
+The command will prompt for a user name and email address. Enter your choices following the command instructions, then follow instructions for setting a password. You may then login to the system at https://willkommens-app-backend.local/ with your newly created account.
 
 ---
 ######User registration and email services
@@ -179,6 +179,6 @@ In normal user registration flows, users are sent account verification emails. I
 
 [1]: https://github.com/honeybee/honeybee
 [2]: https://github.com/agavi/agavi
-[3]: https://github.com/honeybee/honeybee-agavi-cmf-project
+[3]: https://github.com/samir-plusb/willkommens-app-backend
 [4]: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line
 [5]: https://github.com/honeybee/honeybee-agavi-cmf-demo/wiki/Introduction

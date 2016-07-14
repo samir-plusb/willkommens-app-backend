@@ -761,7 +761,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Vendor library that is used in the honeybee-agavi-cmf-project.",
+            "description": "Vendor library that is used in the willkommens-app-backend.",
             "homepage": "https://github.com/honeybee/honeybee-agavi-cmf-vendor",
             "keywords": [
                 "agavi",

@@ -10,9 +10,9 @@ use Exception;
 
 class ProjectHandler
 {
-    const DEFAULT_HOST_NAME = 'honeybee-agavi-cmf-project.local';
-    const DEFAULT_REPOSITORY_NAME = 'honeybee/honeybee-agavi-cmf-project';
-    const DEFAULT_PROJECT_NAME = 'honeybee-agavi-cmf-project';
+    const DEFAULT_HOST_NAME = 'willkommens-app-backend.local';
+    const DEFAULT_REPOSITORY_NAME = 'samir-plusb/willkommens-app-backend';
+    const DEFAULT_PROJECT_NAME = 'willkommens-app-backend';
 
     protected static function getProjectPath(Event $event)
     {

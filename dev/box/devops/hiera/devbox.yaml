@@ -1,12 +1,12 @@
 ---
-berlinonline::project_name: "honeybee-agavi-cmf-project"
-berlinonline::project_prefix: "honeybee-agavi-cmf-project"
-berlinonline::application_name: honeybee-agavi-cmf-project.local
+berlinonline::project_name: "willkommens-app-backend"
+berlinonline::project_prefix: "willkommens-app-backend"
+berlinonline::application_name: willkommens-app-backend.local
 berlinonline::application_dir: "pub"
 berlinonline::application_env: development
 berlinonline::bo_environment: development
 berlinonline::aliases_root_recipient: vagrant
-berlinonline::project_git_path: "git@github.com:honeybee/honeybee-agavi-cmf-project.git"
+berlinonline::project_git_path: "git@github.com:samir-plusb/willkommens-app-backend.git"
 
 berlinonline::sudos:all:
   - deploy
@@ -21,16 +21,16 @@ couchdb::bind_address: "0.0.0.0"
 
 converjon::version: "2.7.1"
 converjon::url_whitelist:
-  - '~ ^http:\/\/honeybee-agavi-cmf-project.local:?\d*\/\S+'
+  - '~ ^http:\/\/willkommens-app-backend.local:?\d*\/\S+'
 converjon::nginx_deployment: path
 converjon::base_url_path: /converjon/
 converjon::reject_invalid_ssl: false
 converjon::aliases:
   -
     name: local
-    base_file_path: "/srv/www/honeybee-agavi-cmf-project.local/data/files"
+    base_file_path: "/srv/www/willkommens-app-backend.local/data/files"
     fallback_base_file_paths:
-      - "/srv/www/honeybee-agavi-cmf-project.local/data/temp_files"
+      - "/srv/www/willkommens-app-backend.local/data/temp_files"
     headers:
       - 'Cache-Control: "public, max-age=86400"'
 
@@ -44,7 +44,7 @@ local_conf:
       provider: json
       content:
         local:
-          base_href: https://honeybee-agavi-cmf-project.local/
+          base_href: https://willkommens-app-backend.local/
     -
       file: elasticsearch.json
       provider: json
